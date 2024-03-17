@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page in HTML with CSS Code Example</title>
+    <!-- Menghubungkan stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css"> <!-- Menghubungkan stylesheet lokal -->
+
+</head>
+
+<body>
+    <!-- Kontainer utama -->
+    <div class="box-form">
+        <!-- Bagian kiri -->
+        <div class="left">
+            <!-- Overlay untuk latar belakang -->
+            <div class="overlay">
+                <!-- Judul -->
+                <h1>Travel.</h1>
+                <!-- Paragraf -->
+                <p1>Nikmati keindahan pantai dengan pasir putih dan air biru yang menyejukkan.
+                    Rasakan kesegaran angin laut dan keindahan alam yang menakjubkan.
+                    Liburan di pantai adalah waktu yang sempurna untuk
+                    bersantai, menikmati matahari, dan membuat kenangan indah bersama keluarga.</p1>
+                <!-- Informasi login dengan media sosial -->
+                <span>
+                    <p>login with social media</p>
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
+                </span>
+                <!-- Tanggal -->
+                <div class="tgl">
+                    <p id="waktu"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bagian kanan -->
+        <div class="right">
+            <!-- Judul -->
+            <h5>Login</h5>
+            <!-- Link untuk membuat akun baru -->
+            <p>Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
+            <!-- Input username dan password -->
+            <div class="inputs">
+                <input type="text" placeholder="user name">
+                <br>
+                <input type="password" placeholder="password">
+            </div>
+
+            <br><br>
+
+            <!-- Remember me dan forget password -->
+            <div class="remember-me--forget-password">
+                <!-- Checkbox untuk mengingat saya -->
+                <label>
+                    <input type="checkbox" name="item" checked />
+                    <span class="text-checkbox">Remember me</span>
+                </label>
+                <!-- Link untuk lupa password -->
+                <p>forget password?</p>
+            </div>
+
+            <br>
+            <!-- Tombol Login -->
+            <input class="btn" type="button" onclick="Submit()" value="Login">
+            <!-- Menghubungkan script JavaScript -->
+            <script src="./script/main.js"></script>
+            <!-- Menghubungkan library SweetAlert2 -->
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        </div>
+
+    </div>
+</body>
+
+</html>
